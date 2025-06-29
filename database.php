@@ -3,9 +3,9 @@
   $user = 'root';
   $password = '';
   $database = 'php-login-with-session';
-  $port = 3307; // Optional
 
-  $connection = mysqli_connect($host, $user, $password, $database, $port);
+
+  $connection = mysqli_connect($host, $user, $password, $database);
 
   if (mysqli_connect_error()) {
     echo 'error';
